@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>search</title>
+</head>
+<body>
+	<form action="search.php" method= "POST">
+		<input type="text" name="searchText">
+		<input type="submit" value="rechercher">
+	</form>
+	<ul>
+		<?php foreach($products as $product) { ?>
+			
+			<li><?= $product['productName'] ?></li>
+
+		<?php } ?>
+	</ul>
+</body>
+</html>
